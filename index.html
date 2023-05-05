@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+</head>
+<body>
+    <p> Add Employee </p>
+    <form class="addemployee-form" onSubmit="submitForm(event)">
+        First Name: <input id="firstname" type="text" />
+        Last Name: <input id="lastname" type="text" />
+        ID: <input id="id" type="number" />
+        Title: <input id="title" type="text" />
+        Annual Salary: <input id="annualsalary" type="number" />
+        <br>
+        <button>Submit</button>
+    </form>
+    <p> Employees </p>
+    <table id="employees">
+        <tableheader>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Annual Salary</th>
+            </tr>
+        </tableheader>
+        <tablebody>
+            <tr>
+                <td>Jen</td>
+                <td>Barber</td>
+                <td>4521</td>
+                <td>Team Lead</td>
+                <td>$80,000</td>
+                <td><button onclick="deleteButton()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Maurice</td>
+                <td>Moss</td>
+                <td>8724</td>
+                <td>Support Team</td>
+                <td>$58,000</td>
+                <td><button onclick="deleteButton()">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Roy</td>
+                <td>Smith</td>
+                <td>9623</td>
+                <td>Quality Assurance</td>
+                <td>$48,000</td>
+                <td><button onclick="deleteButton()">Delete</button></td>
+            </tr>
+        </tablebody>
+      </table> 
+
+    
+</body>
+</html>
